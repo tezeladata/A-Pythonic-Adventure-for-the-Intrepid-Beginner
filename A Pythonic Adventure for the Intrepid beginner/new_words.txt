@@ -1,0 +1,12 @@
+compression - შეკუმშვა
+polynomial - მრავალწევრი
+polymatg - ერუდიტი, ენციკლოპედისტი
+glib - სიტყვამრავალი
+subconscious - ქვეცნობიერი
+intercept - გადაკვეთა
+kernel - ბირთვი
+plausibility - დამაჯერებლობა
+infer - დასკვნა
+constraint - შეზღუდვა
+delineate - გამოკვეთა
+drudgery - შრომატევადი
