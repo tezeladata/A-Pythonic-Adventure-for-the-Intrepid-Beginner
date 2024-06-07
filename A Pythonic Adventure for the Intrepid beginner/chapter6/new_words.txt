@@ -1,0 +1,3 @@
+peddle - გაყიდვა
+ware - ნაკეთობა
+itinerary - მარშრუტი
