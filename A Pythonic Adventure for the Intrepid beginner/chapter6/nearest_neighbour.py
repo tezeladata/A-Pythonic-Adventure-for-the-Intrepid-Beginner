@@ -95,4 +95,40 @@ def howfar(lines):
 print(howfar(genlines(cities,donn(cities,N))))
 
 
-# page 236
+
+# By using this function, we switch places of random cities and if total distance
+# becomes less, we return new list
+def perturb(cities,itinerary):
+    neighborids1 = math.floor(np.random.rand() * (len(itinerary)))
+    neighborids2 = math.floor(np.random.rand() * (len(itinerary)))
+
+    itinerary2 = itinerary.copy()
+
+    itinerary2[neighborids1] = itinerary[neighborids2]
+    itinerary2[neighborids2] = itinerary[neighborids1]
+
+    distance1 = howfar(genlines(cities,itinerary))
+    distance2 = howfar(genlines(cities,itinerary2))
+
+    itinerarytoreturn = itinerary.copy()
+
+    if(distance1 > distance2):
+        itinerarytoreturn = itinerary2.copy()
+
+    return(itinerarytoreturn.copy())
+
+
+itinerary = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25, 26,27,28,29, 30,31,32,33,34,35,36,37,38,39]
+np.random.seed(random_seed)
+itinerary_ps = itinerary.copy()
+for n in range(0,len(itinerary) * 500):
+ itinerary_ps = perturb(cities,itinerary_ps)
+print(howfar(genlines(cities,itinerary_ps)))
+
+# Greedy algorithms proceed in steps, and they make
+# choices that are locally optimal at each step but may not be
+# globally optimal once all the steps are considered.
+
+# greedy algorithms search only for local
+# improvements, they will never allow us to go down and can get
+# us stuck on local extrema. 

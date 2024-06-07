@@ -1,3 +1,5 @@
 peddle - გაყიდვა
 ware - ნაკეთობა
 itinerary - მარშრუტი
+shortsightedness - შორსმჭვრეტელობა
+overzealous - გულდმოდგინე 
